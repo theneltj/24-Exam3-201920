@@ -270,7 +270,7 @@ def problem4(seq_of_seq, n):
       :type seq_of_seq: [[int]]
       :type n:          int
       :rtype: int
-    """
+    """ 
     # -------------------------------------------------------------------------
     # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
