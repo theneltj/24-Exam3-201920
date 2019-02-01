@@ -17,7 +17,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-string for the   is_prime   function defined below.
+# DONE: 2.  READ the doc-string for the   is_prime   function defined below.
 # It is the same as you have seen before.
 # After you UNDERSTAND the doc-string (JUST the doc-string, NOT the code),
 # ASKING QUESTIONS AS NEEDED, change the above _TODO_ to DONE.
@@ -275,7 +275,11 @@ def problem4(seq_of_seq, n):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(seq_of_seq)):
+        for j in range(len(seq_of_seq[k])):
+            if seq_of_seq[k][j] > n and is_prime(seq_of_seq[k][j]):
+                return seq_of_seq[k][j]
+    return -1
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
